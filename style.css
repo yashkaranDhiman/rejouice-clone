@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: NIP;
+}
+@font-face {
+    font-family: Headline;
+    src: url('./assets/Rejouice-Headline.ttf');
+}
+@font-face {
+    font-family: NIP;
+    src: url('./assets/NBInternationalProBoo.ttf');
+}
+body{
+    overflow-x: hidden;
+}
+#play{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    z-index: 999;
+    border-radius: 50%;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#page1{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    color: white;
+    position: relative;
+}
+#page1 video{
+    width: 100%;
+    position: absolute;
+}
+#page1-overlay{
+    width: 100%;
+    height: 100%;
+}
+#page1-top{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+}
+nav{
+    z-index: 1;
+    display: flex;
+    padding: 4vw 3vw;
+    justify-content: space-between;
+}
+h1{
+    font-family: Headline;
+    position: absolute;
+    font-size: 27vw;
+    left: 50%;
+    cursor:default;
+    bottom: -17%;
+    transform: translateX(-50%);
+}
+#page2,#page4,#page5{
+    width: 100vw;
+    height: 100vh;
+}
+#page2-heading h2,#page4-heading h2,#page5-heading h2{
+    font-size: 1.8vw;
+    font-weight: 400;
+    padding: 3vw;
+    color: #0E0E0E;
+    padding-bottom: 1vw;
+}
+#page2-heading,#page4-heading h2,#page5-heading h2{
+    display: flex;
+    justify-content: space-between;
+}
+.line{
+    margin: auto;
+    width: 95%;
+    height: 1px;
+    background-color: #0E0E0E;
+}
+#page2-text,#page4-text,#page5-text{
+    color: #0E0E0E;
+    padding: 0 3vw;
+    font-size: 4vw;
+}
+#page3{
+    min-height: 100vh;
+    width: 100vw;
+}
+#page3-heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+#page3-heading h4{
+    font-size: 1.2vw;
+    font-weight: 400;
+    display: flex;
+    gap: 4px;
+    color: #0E0E0E;
+}
+#page3-heading h2{
+    font-size: 4vw;
+    text-decoration: underline 3px;
+    color: #0E0E0E;
+    font-weight: 400;
+}
+#models{
+    padding: 4px;
+    background-color: #0E0E0E;
+    border-radius: 20px;
+    color: white;
+    font-size: .8vw;
+}
+#arrow{
+    rotate: -90deg;
+}
+#page3-main{
+    margin-top: 17vw;
+    padding: 0 3vw;
+}
+#card-heading h4{
+    font-size: 1.8vw;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+#card-heading{
+    width: 100%;
+    display: flex;
+    margin-bottom: 1vw;
+    justify-content: space-between;
+}
+#arrow2{
+    rotate: 18deg;
+}
+#cards-container{
+    gap: 1vw;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin-bottom: 5vw;
+    position: relative;
+}
+.card{
+    position: relative;
+}
+.card img,.card video{
+    height: 84vh;
+    cursor: pointer;
+}
+.card img{
+    transition: all ease 0.3s;
+    position: absolute;
+    z-index: 99;
+}
+#seats-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    height: 100vh;
+}
+#ball{
+    position: relative;
+}
+#circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#circle h4{
+    font-weight: 400;
+    font-size: 2vw;
+}
+#circle h5{
+    font-weight: 400;
+    font-size: 1.4vw;
+}
+#page6 {
+    width: 100vw;
+    height: 100vh;
+}
+
+#page6-heading {
+    padding: 4vw 3vw;
+}
+
+#page6-heading h2 {
+    font-size: 9vw;
+}
+
+#marquee {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 25s linear infinite;
+}
+ 
+#marquee img {
+    width: 20vw;
+}
+#about{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about-main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#about-main h4{
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #0E0E0E;
+}
+#about-main h2{
+    font-size: 4vw;
+    text-decoration: underline;
+    font-weight: 400;
+    color: #0E0E0E;
+}
+#page7{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+    background-color: #0E0E0E;
+    display: flex;
+    flex-direction: column; 
+}
+#map{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#map-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 2vw;
+}
+#btn{
+    padding:15px 15px ;
+    font-size: 1.4vw;
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 170px;
+    color: white;
+    background-color: transparent;
+}
+#map-right{
+    display: flex;
+    gap: 5vw;
+    padding: 2vw;
+}
+#mini-map{
+    display: flex;
+    flex-direction: column;
+}
+#mini-map p{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2vw;
+}
+#address{
+    margin-top: 6vw;
+    display: flex;
+    justify-content: space-between;
+}
+#address p{
+    font-size: 1.2vw;
+}
+#social{
+    font-size: 1.2vw;
+    flex-direction: column;
+    display: flex;
+
+}
+#left-ad{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2vw;
+}
+#right-ad{
+    display: flex;
+    gap: 4vw;
+    padding: 0 2vw;
+}
+#name h2{
+    background-color: #0E0E0E;
+    font-family: Headline;
+    font-size: 24vw;
+    letter-spacing: -3vw;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    body{
+        background-color: black;
+    }
+}
